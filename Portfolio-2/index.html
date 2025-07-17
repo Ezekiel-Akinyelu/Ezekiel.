@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezekiel - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">Portfolio</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('home')" class="nav-link">Home</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('services')" class="nav-link">Services</button>
+                    <button onclick="scrollToSection('portfolio')" class="nav-link">Portfolio</button>
+                    <button onclick="scrollToSection('contact')" class="btn btn-primary">Contact</button>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-nav" class="nav-mobile">
+                <div class="nav-mobile-content">
+                    <button onclick="scrollToSection('home')" class="nav-link-mobile">Home</button>
+                    <button onclick="scrollToSection('about')" class="nav-link-mobile">About</button>
+                    <button onclick="scrollToSection('services')" class="nav-link-mobile">Services</button>
+                    <button onclick="scrollToSection('portfolio')" class="nav-link-mobile">Portfolio</button>
+                    <button onclick="scrollToSection('contact')" class="btn btn-primary">Contact</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-avatar">
+                        <div class="avatar">
+                            <span class="avatar-text">EA</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Hi, I'm Ezekiel
+                        <br>
+                        <span class="hero-subtitle">Full Stack Developer</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        I create beautiful, functional, and user-centered digital experiences. 
+                        With expertise in modern web technologies, I help businesses bring their ideas to life.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button onclick="scrollToSection('portfolio')" class="btn btn-primary btn-large">
+                            View My Work
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14m-7-7 7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <button onclick="scrollToSection('contact')" class="btn btn-outline btn-large">Get In Touch</button>
+                    </div>
+                    
+                    <div class="social-links">
+                        <button class="social-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p class="section-description">
+                        I'm a passionate developer with 5+ years of experience creating digital solutions 
+                        that make a difference. I combine technical expertise with creative problem-solving.
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>My Journey</h3>
+                        <p class="text-muted">
+                            Started my career as a frontend developer and gradually expanded into full-stack development. 
+                            I've worked with startups and established companies, helping them build scalable web applications 
+                            and improve their digital presence.
+                        </p>
+                        <p class="text-muted">
+                            When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                            projects, or sharing knowledge through tech blogs and community meetups.
+                        </p>
+                    </div>
+                    
+                    <div class="highlights-grid">
+                        <div class="card highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16,18 22,12 16,6"/>
+                                    <polyline points="8,6 2,12 8,18"/>
+                                </svg>
+                            </div>
+                            <h4>Clean Code</h4>
+                            <p class="text-muted small">Writing maintainable, scalable, and well-documented code</p>
+                        </div>
+                        <div class="card highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h4>Modern Design</h4>
+                            <p class="text-muted small">Creating beautiful interfaces with attention to user experience</p>
+                        </div>
+                        <div class="card highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                                </svg>
+                            </div>
+                            <h4>Performance</h4>
+                            <p class="text-muted small">Optimizing applications for speed and efficiency</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Technologies I Work With</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                        <span class="skill-badge">Next.js</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">GraphQL</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Services</h2>
+                    <p class="section-description">
+                        I offer comprehensive development services to help bring your ideas to life, 
+                        from initial concept to final deployment.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M2 12h20"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                            <h4>Web Development</h4>
+                        </div>
+                        <p class="text-muted small service-description">
+                            Custom websites and web applications built with modern technologies and best practices.
+                        </p>
+                        <ul class="service-features">
+                            <li><span class="feature-dot"></span>Responsive Design</li>
+                            <li><span class="feature-dot"></span>SEO Optimization</li>
+                            <li><span class="feature-dot"></span>Performance Tuning</li>
+                            <li><span class="feature-dot"></span>Cross-browser Compatibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                                    <path d="M12 18h.01"/>
+                                </svg>
+                            </div>
+                            <h4>Mobile Apps</h4>
+                        </div>
+                        <p class="text-muted small service-description">
+                            Native and cross-platform mobile applications for iOS and Android platforms.
+                        </p>
+                        <ul class="service-features">
+                            <li><span class="feature-dot"></span>React Native</li>
+                            <li><span class="feature-dot"></span>Native Performance</li>
+                            <li><span class="feature-dot"></span>App Store Deployment</li>
+                            <li><span class="feature-dot"></span>Push Notifications</li>
+                        </ul>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                    <path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/>
+                                    <path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/>
+                                </svg>
+                            </div>
+                            <h4>Backend Development</h4>
+                        </div>
+                        <p class="text-muted small service-description">
+                            Scalable server-side solutions with robust APIs and database architecture.
+                        </p>
+                        <ul class="service-features">
+                            <li><span class="feature-dot"></span>RESTful APIs</li>
+                            <li><span class="feature-dot"></span>Database Design</li>
+                            <li><span class="feature-dot"></span>Cloud Deployment</li>
+                            <li><span class="feature-dot"></span>Security Best Practices</li>
+                        </ul>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
+                            <h4>Consulting</h4>
+                        </div>
+                        <p class="text-muted small service-description">
+                            Technical consultation and code reviews to improve your existing projects.
+                        </p>
+                        <ul class="service-features">
+                            <li><span class="feature-dot"></span>Code Audits</li>
+                            <li><span class="feature-dot"></span>Architecture Review</li>
+                            <li><span class="feature-dot"></span>Performance Analysis</li>
+                            <li><span class="feature-dot"></span>Team Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Portfolio</h2>
+                    <p class="section-description">
+                        Here are some of my recent projects that showcase my skills and experience 
+                        in building modern web applications.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop" alt="E-Commerce Platform" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p class="text-muted small project-description">
+                                A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.
+                            </p>
+                            
+                            <div class="project-technologies">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Stripe</span>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" x2="21" y1="14" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </button>
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop" alt="Task Management App" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p class="text-muted small project-description">
+                                A collaborative project management tool with real-time updates, team collaboration, and progress tracking.
+                            </p>
+                            
+                            <div class="project-technologies">
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">Prisma</span>
+                                <span class="tech-badge">Socket.io</span>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" x2="21" y1="14" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </button>
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Analytics Dashboard" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>Analytics Dashboard</h3>
+                            <p class="text-muted small project-description">
+                                A comprehensive analytics platform with interactive charts, real-time data visualization, and reporting.
+                            </p>
+                            
+                            <div class="project-technologies">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">D3.js</span>
+                                <span class="tech-badge">Express</span>
+                                <span class="tech-badge">MongoDB</span>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" x2="21" y1="14" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </button>
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?w=500&h=300&fit=crop" alt="Social Media App" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3>Social Media App</h3>
+                            <p class="text-muted small project-description">
+                                A modern social platform with user profiles, real-time messaging, and content sharing capabilities.
+                            </p>
+                            
+                            <div class="project-technologies">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">Redux</span>
+                                <span class="tech-badge">Cloud Functions</span>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" x2="21" y1="14" y2="3"/>
+                                    </svg>
+                                    Live Demo
+                                </button>
+                                <button class="btn btn-outline btn-small">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p class="section-description">
+                        Have a project in mind or just want to chat? I'd love to hear from you. 
+                        Send me a message and I'll get back to you as soon as possible.
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-form-section">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Send a Message</h4>
+                            </div>
+                            <div class="card-content">
+                                <form id="contact-form" class="contact-form">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary btn-full">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 2 11 13"/>
+                                            <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                        </svg>
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-section">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Contact Information</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="contact-info-list">
+                                    <a href="mailto:john@example.com" class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                                <polyline points="22,6 12,13 2,6"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="contact-info-title">Email</p>
+                                            <p class="contact-info-value">ezekielakinyelu17@gmail.com</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="tel:+15551234567" class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="contact-info-title">Phone</p>
+                                            <p class="contact-info-value">+234 816 629 9252</p>
+                                        </div>
+                                    </a>
+
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                                <circle cx="12" cy="10" r="3"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="contact-info-title">Location</p>
+                                            <p class="contact-info-value">Lagos, NG</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Let's Connect</h4>
+                                <p class="text-muted small">
+                                    I'm always open to discussing new opportunities and interesting projects.
+                                </p>
+                                <p class="text-muted small">
+                                    Response time: Usually within 24 hours
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo-icon"></div>
+                        <span class="logo-text">Ezekiel Akinyelu</span>
+                    </div>
+                    <p class="text-muted small">
+                        Full Stack Developer passionate about creating amazing digital experiences.
+                    </p>
+                    <div class="social-links">
+                        <button class="social-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 6.3 11.6 10.1 20-2.6-.9 1.7-2.3 3.1-4 4z"/>
+                            </svg>
+                        </button>
+                        <button class="social-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><button onclick="scrollToSection('home')">Home</button></li>
+                        <li><button onclick="scrollToSection('about')">About</button></li>
+                        <li><button onclick="scrollToSection('services')">Services</button></li>
+                        <li><button onclick="scrollToSection('portfolio')">Portfolio</button></li>
+                        <li><button onclick="scrollToSection('contact')">Contact</button></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li>Web Development</li>
+                        <li>Mobile Apps</li>
+                        <li>Backend Development</li>
+                        <li>Technical Consulting</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted small">
+                    &copy; <span id="current-year"></span> Ezekiel Akinyelu. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
