@@ -128,28 +128,28 @@ function setupContactForm() {
 }
 
 function submitContactForm(data) {
-    // Show loading state
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = 'Sending...';
     submitBtn.disabled = true;
-    
-    // Simulate API call
-    setTimeout(() => {
-        // Reset button
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        
-        // Show success message
-        showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Log form data (in a real app, this would be sent to a server)
-        console.log('Form submitted:', data);
-    }, 2000);
+
+    emailjs.send('service_je9gocq', 'template_94w3u2g', data)
+        .then(function(response) {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+
+            showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
+            contactForm.reset();
+            console.log('Email sent successfully:', response);
+        }, function(error) {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+
+            showNotification('Oops! Something went wrong. Please try again later.', 'error');
+            console.error('Email sending failed:', error);
+        });
 }
+
 
 // Email validation
 function isValidEmail(email) {
