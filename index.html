@@ -630,9 +630,15 @@
         </div>
     </footer>
     <!-- This is for sending the email -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      emailjs.init("zE7mtBdHJcJ1Tmk_1"); // Replace with your User ID from EmailJS dashboard
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "zE7mtBdHJcJ1Tmk_1",
+          });
+       })();
     </script>
     <script src="script.js"></script>
 </body>
